@@ -1,0 +1,604 @@
+
+@font-face{
+    font-family:'Fredoka';
+    src: url(fonts/Fredoka-VariableFont_wdth\,wght.ttf) format('opentype');
+}
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML setup */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+ 
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.header-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: white;
+    padding: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav-container, .container, .video-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 15px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+
+
+
+
+.logo-container{
+    width: 100%;
+    position: relative;
+}
+
+
+.malezi-logo{
+    height: 30px;
+   
+}
+.mastercad-logo{
+    height: 30px;
+    right:15px;
+    position:absolute;
+    
+}
+
+
+/* Header Section */
+
+.header {
+  
+    background: url('images/Landing\ Page\ Artwork_V3\ \(2\).jpg') no-repeat center center;
+    background-size: cover;
+    
+    padding: 300px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.626);
+}
+
+
+
+.intro {
+    
+    text-align: center;
+    font-family: 'Fredoka';
+    font-size: 36px;
+    margin: 50px;
+}
+.intro h1{
+    font-size: 40px;
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+.intro hr {
+    width: 60%;
+    margin: 10px auto 30px;
+    border: 1px solid #333;
+}
+.intro p{
+    font-family:'Fredoka', sans-serif;
+    font-size: 24px;
+    left: 50%;
+    right: 50%;
+}
+.learn-more{
+    background-color:#c3ea9ff6;
+    padding: 20px;
+}
+.learn-more h2 {
+    font-size: 40px;
+    
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:'Fredoka', sans-serif;
+}
+
+.learn-more hr {
+    width: 60%;
+    margin: 10px auto 30px;
+    border: 1px solid #333;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #ffffff06;
+    
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.video-item img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.video-item p {
+    font-family:'Fredoka', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+footer {
+    
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-bottom {
+    bottom: 0;
+    width: 100%;
+}
+.container h1{
+    font-family:'Fredoka', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.container hr{
+    width: 60%;
+    margin: 10px auto 30px;
+    border: 1px solid #333;
+}
+.container p{
+    font-family:'Fredoka', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    
+
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.tab {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px 60px;
+    cursor: pointer;
+    transition: background-color 0.3s color 0.3s;
+    font-family:'Fredoka', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    
+}
+.tab.active {
+    background-color:#53515144; /* Change to desired active background color */
+    color: white; /* Change to desired active text color */
+}
+
+
+
+.content:first-of-type {
+    display: flex; /* Show the first content section */
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content.active{
+    display: flex;
+}
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.video-item {
+    margin-bottom: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.video-item iframe {
+    
+    width: 100%;
+    max-width: 410px;
+    height: 315px;
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-family: 'Fredoka';
+    font-size: 24px;
+
+}
+.see-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.see-more-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Example CSS */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
+  gap: 20px; /* Adjust gap between items */
+}
+
+.video-item {
+  text-align: center; /* Center align video items */
+}
+
+.video-item video {
+  max-width: 100%; /* Ensure videos don't overflow their containers */
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as per your design needs */
+  .video-container {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+    .video-item iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header {
+        padding: 300px;
+    }
+
+
+
+    
+    .lay-text {
+        font-size: 32px;
+    }
+
+    .overlay-text {
+        font-size: 80px;
+    }
+
+    .learn-more h2, .intro h1, .container h1 {
+        font-size: 32px;
+    }
+
+    .intro p, .container p, .tab, .video-item p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 100px;
+    }
+
+    .lay-text {
+        font-size: 28px;
+    }
+
+    .overlay-text {
+        font-size: 60px;
+    }
+
+    .learn-more h2, .intro h1, .container h1 {
+        font-size: 28px;
+    }
+
+    .intro p, .container p, .tab, .video-item p {
+        font-size: 18px;
+    }
+
+    .video-item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 300px;
+    }
+
+    .lay-text {
+        font-size: 24px;
+    }
+
+    .overlay-text {
+        font-size: 48px;
+    }
+
+    .learn-more h2, .intro h1, .container h1 {
+        font-size: 24px;
+    }
+
+    .intro p, .container p, .tab, .video-item p {
+        font-size: 16px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .video-item {
+        flex-basis: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav.navbar {
+        width: 100%;
+        height: 30px;
+    }
+    .malezi-logo{
+        height: 20px;
+        top:0;
+    }
+    .mastercad-logo{
+        height: 20px;
+        top: 0px;
+        
+    }
+    
+    
+    
+    .header {
+        padding: 100px;
+        align-items:start;
+        
+    }
+
+    .lay-text {
+        font-size: 8px;
+    }
+
+    .overlay-text {
+        font-size: 8px;
+    }
+
+    .learn-more h2, .intro h1, .container h1 {
+        font-size: 20px;
+    }
+
+    .intro p, .container p, .tab, .video-item p {
+        font-size: 14px;
+    }
+
+    .video-item {
+        flex-basis: 100%;
+    }
+
+    .tab {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+@media (max-width: 320px) {
+
+    nav.navbar {
+        width: 100%;
+        height: 30px;
+    }
+    .malezi-logo{
+        height: 15px;
+       width: 30px;
+    }
+    .mastercad-logo{
+        right: 4px;
+        height: 15px;
+        width: 45px;
+    }
+   .header{
+    padding: 150px;
+   }
+
+
+
+
+    .intro {
+        padding-top: 5px;
+        text-align: center;
+        font-family: 'Fredoka';
+        font-size: 36px;
+        margin: 20px;
+    }
+    
+    .intro h1{
+        font-size: 40px;
+        padding-top: 5px;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .intro hr {
+        width: 60%;
+        margin: 10px auto 20px;
+        border: 1px solid #333;
+    }
+    
+    .learn-more{
+        background-color:#c3ea9ff6;
+        padding: 5px;
+    }
+    .learn-more h2 {
+        font-size: 40px;
+        
+        margin-bottom: 1px;
+        text-align: center;
+        font-family:'Fredoka', sans-serif;
+    }
+    
+    .learn-more hr {
+        width: 60%;
+        margin: 10px auto 15px;
+        border: 1px solid #333;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 5px; /* Adjust padding as needed */
+    }
+
+    .container h1{
+        font-family:'Fredoka', sans-serif;
+        font-size: 40px;
+        margin-bottom: 1px;
+       padding: 5px;
+
+    }
+    .container hr{
+        width: 60%;
+        margin: 10px auto 15px;
+        border: 1px solid #333;
+    }
+
+
+
+    .header {
+        padding: 100px;
+        align-items:start;
+        
+    }
+
+    .lay-text {
+        font-size: 8px;
+    }
+
+    .overlay-text {
+        font-size: 8px;
+    }
+
+    .learn-more h2, .intro h1, .container h1 {
+        font-size: 20px;
+
+    }
+
+    .intro p, .container p, .tab, .video-item p {
+        font-size: 14px;
+    }
+
+    .video-item {
+        flex-basis: 100%;
+    }
+
+    .tab {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
